@@ -13,7 +13,6 @@
 
 @property (nonatomic, strong) UITableView *zqTabview;
 @property (nonatomic, strong) NSMutableArray *dataMutArr;
-@property (nonatomic, weak) id<ZQShareSelectProtocol> delegate;
 
 @end
 
@@ -45,12 +44,14 @@
     [self.view addSubview:_zqTabview];
     
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     NSArray *rowsArr = self.dataMutArr[section];
     
     return rowsArr.count;
 }
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return self.dataMutArr.count;
@@ -85,12 +86,6 @@
         }
     }
     
-}
-
-
-- (void)loadDelegate:(id <ZQShareSelectProtocol>)delegate
-{
-    self.delegate = delegate;
 }
 
 - (void)didReceiveMemoryWarning

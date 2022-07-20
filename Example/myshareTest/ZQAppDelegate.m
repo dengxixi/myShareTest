@@ -19,8 +19,7 @@
     [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor grayColor];
     ZQViewController *vc = [[ZQViewController alloc] init];
-    ZQAlert *al = [[ZQAlert alloc] initw];
-    al.zqVC = vc;
+    ZQAlert *al = [[ZQAlert alloc] initWithVC:vc];
     self.window.rootViewController = vc;
     
     return YES;

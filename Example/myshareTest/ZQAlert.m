@@ -16,11 +16,11 @@
 @implementation ZQAlert
 
 
-- (instancetype)initWithVC:(UIViewController <ZQShareSelectProtocol> *)vc
+- (instancetype)initWithVC:(ZQViewController *)vc
 {
     if (self = [super init]) {
         _zqVC = vc;
-        [_zqVC loadDelegate:self];
+        _zqVC.delegate = self;
     }
     return self;
     

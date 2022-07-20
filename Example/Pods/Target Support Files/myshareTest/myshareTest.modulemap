@@ -1,0 +1,6 @@
+framework module myshareTest {
+  umbrella header "myshareTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

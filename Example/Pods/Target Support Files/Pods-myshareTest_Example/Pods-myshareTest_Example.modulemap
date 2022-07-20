@@ -1,0 +1,6 @@
+framework module Pods_myshareTest_Example {
+  umbrella header "Pods-myshareTest_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

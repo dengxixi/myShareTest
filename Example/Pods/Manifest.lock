@@ -1,0 +1,23 @@
+PODS:
+  - myshareTest (0.1.0)
+  - zqshare (0.1.1)
+
+DEPENDENCIES:
+  - myshareTest (from `../`)
+  - zqshare (~> 0.1.1)
+
+SPEC REPOS:
+  https://github.com/dengxixi/test-repos:
+    - zqshare
+
+EXTERNAL SOURCES:
+  myshareTest:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  myshareTest: 6e7fcbdea9effa7b3eb4aad021ccd0dd6293953b
+  zqshare: fe5cb10626df33b1a3dc209d57cb4c51baab3c35
+
+PODFILE CHECKSUM: 589278c0a12169a7d1b76eb17968fb06213efbb9
+
+COCOAPODS: 1.11.3
