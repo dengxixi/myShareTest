@@ -2,9 +2,11 @@ use_frameworks!
 
 platform :ios, '10.0'
 
+source 'https://github.com/dengxixi/test-repos'
+
 target 'myshareTest_Example' do
   pod 'myshareTest', :path => '../'
-
+  pod 'zqshare', '~>0.1.1'
   target 'myshareTest_Tests' do
     inherit! :search_paths
 

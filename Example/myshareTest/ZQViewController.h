@@ -7,7 +7,8 @@
 //
 
 @import UIKit;
+#import "ZQShareSelectProtocol.h"
 
 @interface ZQViewController : UIViewController
-
+- (void)loadDelegate:(id <ZQShareSelectProtocol>)delegate;
 @end

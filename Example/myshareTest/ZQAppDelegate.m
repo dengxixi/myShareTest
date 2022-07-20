@@ -7,12 +7,22 @@
 //
 
 #import "ZQAppDelegate.h"
+#import "ZQViewController.h"
+#import "ZQAlert.h"
 
 @implementation ZQAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+    self.window.backgroundColor = [UIColor grayColor];
+    ZQViewController *vc = [[ZQViewController alloc] init];
+    ZQAlert *al = [[ZQAlert alloc] initw];
+    al.zqVC = vc;
+    self.window.rootViewController = vc;
+    
     return YES;
 }
 
